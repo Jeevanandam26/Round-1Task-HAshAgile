@@ -1,0 +1,11 @@
+let s=prompt("enter the string");
+let n=parseInt(prompt("enter the rotation count"));
+let arr=s.split('');
+for(let j=0;j<n;j++){
+ let first=arr[0];
+ for(let i=0;i<arr.length-1;i++){
+ arr[i]=arr[i+1];
+ }
+ arr[arr.length-1]=first;
+}
+ console.log(arr.join(''));
